@@ -18,7 +18,7 @@ public class SierpinskiCanvas extends View {
     shape.setPoints(new PointCoord(x1,y1), 
         new PointCoord(x2,y2), 
         new PointCoord(x3,y3));
-    mPaint.setColor(0xFF000000);
+    mPaint.setColor(0xFF00AA00);
   }
   
   @Override
