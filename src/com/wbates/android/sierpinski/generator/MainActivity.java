@@ -2,10 +2,12 @@ package com.wbates.android.sierpinski.generator;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Button;
+import android.widget.Toast;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.SeekBar.OnSeekBarChangeListener;
@@ -69,6 +71,12 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener {
         i.putExtra("sb2y", progressToDim(sb2y.getProgress(),height));
         i.putExtra("sb3x", progressToDim(sb3x.getProgress(),width));
         i.putExtra("sb3y", progressToDim(sb3y.getProgress(),height));
+        Context context = getApplicationContext();
+        CharSequence text = "Generating Sierpinski ... patience if it takes a while to see something.";
+        int duration = Toast.LENGTH_LONG;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
         MainActivity.this.startActivity(i);
       }
     });
