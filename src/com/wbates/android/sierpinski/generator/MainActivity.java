@@ -73,7 +73,7 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener {
         i.putExtra("sb3y", progressToDim(sb3y.getProgress(),height));
         Context context = getApplicationContext();
         CharSequence text = "Generating Sierpinski ... patience if it takes a while to see something.";
-        int duration = Toast.LENGTH_LONG;
+        int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
