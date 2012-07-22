@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <SeekBar
+            android:id="@+id/sb1x"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="1000"
+            android:progress="0" />
+    
+    <TextView
+            android:id="@+id/tv1x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="10sp" />
+    
+     <SeekBar
+            android:id="@+id/sb2x"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="1000"
+            android:progress="0" />
+     
+     <TextView
+            android:id="@+id/tv2x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="10sp" />
+     
+      <SeekBar
+            android:id="@+id/sb3x"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="1000"
+            android:progress="1000" />
+      
+      <TextView
+            android:id="@+id/tv3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="10sp" />
+
+</LinearLayout>
