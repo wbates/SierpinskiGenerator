@@ -38,9 +38,8 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Additional Licenses
 ------------------------
-* Library
-    * Android Support Library v4
-* URL
-    * http://developer.android.com/tools/extras/support-library.html
-* License
-    * Apache License 2.0 (LICENSE-2.0.txt http://www.apache.org/licenses/LICENSE-2.0.txt)
+* Android Support Library v4
+    * URL
+        * http://developer.android.com/tools/extras/support-library.html
+    * License
+        * Apache License 2.0 (LICENSE-2.0.txt http://www.apache.org/licenses/LICENSE-2.0.txt)
