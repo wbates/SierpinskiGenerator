@@ -12,7 +12,7 @@ language, including math and graphics functionality.
 
 There is no real value to society from this demo, but why write something and then
 throw it out, right?  And maybe some day, some where, a dispute with potential global
-impact can be solved with this library.
+impact can be solved with this application.
 
 License (MIT)
 -----------------------------
