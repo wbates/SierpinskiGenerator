@@ -35,3 +35,9 @@ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIG
 HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
 CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Additional Licenses
+------------------------
+Library: Android Support Library v4
+URL: http://developer.android.com/tools/extras/support-library.html
+License: Apache License 2.0 (LICENSE-2.0.txt http://www.apache.org/licenses/LICENSE-2.0.txt)
