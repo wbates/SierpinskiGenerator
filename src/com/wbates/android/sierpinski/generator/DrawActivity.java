@@ -7,6 +7,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+// TODO add menu options
 
 public class DrawActivity extends Activity {
 
