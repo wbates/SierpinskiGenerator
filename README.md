@@ -8,7 +8,7 @@ This is a simple exercise that I undertook to learn basic Android application de
 
 Why Sierpinski?  When I was in HS learning Pascal, we learned how to develop a Sierpinski
 triangle application.  It was pretty simple, but demonstrates several aspects of a
-language, including math and graphics functionality.
+language, including math and graphics functionality. For more info, [read this blog post](http://wbat.es/PCFltO).
 
 There is no real value to society from this demo, but why write something and then
 throw it out, right?  And maybe some day, some where, a dispute with potential global
