@@ -1,5 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menu_settings"
-        android:title="@string/menu_settings"
+    <item android:id="@+id/menu_save_image"
+        android:title="@string/menu_save_image"
         android:orderInCategory="100" />
+    <item android:id="@+id/menu_share_fb"
+        android:title="@string/menu_share_fb"
+        android:orderInCategory="200" />
 </menu>

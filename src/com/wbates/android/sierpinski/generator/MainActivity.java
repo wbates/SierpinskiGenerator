@@ -77,6 +77,7 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener {
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+        
         MainActivity.this.startActivity(i);
       }
     });
