@@ -29,8 +29,8 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener {
     DisplayMetrics displaymetrics = new DisplayMetrics();
     getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
 
-    dimsize[0] = displaymetrics.heightPixels;
-    dimsize[1] = displaymetrics.widthPixels;
+    dimsize[0] = displaymetrics.widthPixels;
+    dimsize[1] = displaymetrics.heightPixels;
 
     for(int dimension=0;dimension<2;dimension++) {
       for(int idval=0;idval<3;idval++) {
