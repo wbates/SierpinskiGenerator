@@ -22,6 +22,7 @@ public class DrawActivity extends Activity {
     setContentView(R.layout.activity_draw);
 
     Intent i = getIntent();
+    // TODO consider removing these lines of code and accessing the intents directly in SierpinskiCanvas call
     int sb1x = i.getIntExtra("sb1x",0);
     int sb1y = i.getIntExtra("sb1y",0);
     int sb2x = i.getIntExtra("sb2x",0);
