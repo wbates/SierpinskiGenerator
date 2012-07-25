@@ -1,4 +1,6 @@
-package com.wbates.android.sierpinski.generator;
+package com.wbates.android.sierpinskigenerator;
+
+import com.wbates.android.sierpinskigenerator.R;
 
 import android.os.Bundle;
 import android.app.Activity;

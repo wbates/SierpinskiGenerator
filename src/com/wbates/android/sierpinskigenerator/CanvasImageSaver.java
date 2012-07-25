@@ -1,4 +1,4 @@
-package com.wbates.android.sierpinski.generator;
+package com.wbates.android.sierpinskigenerator;
 
 import java.io.File;
 import java.io.FileOutputStream;
