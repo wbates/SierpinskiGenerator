@@ -11,7 +11,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class DrawActivity extends Activity {
 
