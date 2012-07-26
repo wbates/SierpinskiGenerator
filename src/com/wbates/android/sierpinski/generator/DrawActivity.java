@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
@@ -42,10 +43,9 @@ public class DrawActivity extends Activity {
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
-    super.onCreateOptionsMenu(menu);
-    menu.add(1,1,0,R.string.menu_save_image);
-    menu.add(1,2,1,R.string.menu_share_fb);
-    return true;
+    MenuInflater inflater = getMenuInflater();
+    inflater.inflate(R.menu.activity_draw, menu);
+    return super.onCreateOptionsMenu(menu);
   }
 
   @Override
@@ -57,10 +57,10 @@ public class DrawActivity extends Activity {
     Toast toast;
 
     switch(item.getItemId()) {
-    case 1:  CanvasImageSaver imagesaver = new CanvasImageSaver(canvas, context);
+    case R.id.menu_save_image:  CanvasImageSaver imagesaver = new CanvasImageSaver(canvas, context);
     imagesaver.saveToImage();
     return true;
-    case 2:  text = "Future feature: Share image to Facebook";
+    case R.id.menu_share_fb:  text = "Future feature: Share image to Facebook";
     toast = Toast.makeText(context, text, duration);
     toast.show();
     return true;
