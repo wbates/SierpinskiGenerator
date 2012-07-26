@@ -5,7 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_save_image">Save to Gallery</string>
-    <string name="menu_share_fb">Share on Facebook</string>
+    <string name="menu_share_fb">Share</string>
     <string name="title_activity_main">Sierpinski Generator</string>
     <string name="button_generator_label">Generate Sierpinski</string>
     <string name="title_activity_draw">DrawActivity</string>

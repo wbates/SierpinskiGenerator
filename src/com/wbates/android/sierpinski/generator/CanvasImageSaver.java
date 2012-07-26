@@ -19,14 +19,22 @@ public class CanvasImageSaver {
   
   private SierpinskiCanvas canvas;
   private Context context;
+  private boolean notify = true;
   
   public CanvasImageSaver(SierpinskiCanvas ca, Context co) {
     canvas = ca;
     context = co;
   }
   
-  public void saveToImage() {
+  public CanvasImageSaver(SierpinskiCanvas ca, Context co, boolean n) {
+    canvas = ca;
+    context = co;
+    notify = n;
+  }
+  
+  public Uri saveToImage() {
     Toast toast;
+    Uri savedimageurl = null;
     int duration = Toast.LENGTH_SHORT;
     CharSequence text = "";
     Date date = new Date();
@@ -54,12 +62,17 @@ public class CanvasImageSaver {
       
       text = "Image saved to " + imagefullpathfilename;
             
-      saveMediaEntry(imagefullpathfilename,imagefilename,"",savetime,0,null);
+      savedimageurl = saveMediaEntry(imagefullpathfilename,imagefilename,"",savetime,0,null);
     } else {
       text = "Unable to create folder: " + folder.getAbsolutePath(); 
-    }  
-    toast = Toast.makeText(context, text, duration);
-    toast.show();
+    }
+    
+    if(notify) {
+      toast = Toast.makeText(context, text, duration);
+      toast.show();
+    }
+    
+    return savedimageurl;
   }
   
   private Uri saveMediaEntry(String imagePath,String title,String description,long dateTaken,int orientation,Location loc) {

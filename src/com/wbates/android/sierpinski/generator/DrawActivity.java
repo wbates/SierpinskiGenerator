@@ -52,17 +52,18 @@ public class DrawActivity extends Activity {
   public boolean onOptionsItemSelected(MenuItem item)
   {
     Context context = getApplicationContext();
-    CharSequence text = "";
-    int duration = Toast.LENGTH_SHORT;
-    Toast toast;
+//    CharSequence text = "";
+//    int duration = Toast.LENGTH_SHORT;
+//    Toast toast;
 
     switch(item.getItemId()) {
     case R.id.menu_save_image:  CanvasImageSaver imagesaver = new CanvasImageSaver(canvas, context);
     imagesaver.saveToImage();
     return true;
-    case R.id.menu_share_fb:  text = "Future feature: Share image to Facebook";
-    toast = Toast.makeText(context, text, duration);
-    toast.show();
+    case R.id.menu_share_fb:  CanvasSocialShare socialshare = new CanvasSocialShare(canvas,context,this);
+      socialshare.shareImage();
+//    toast = Toast.makeText(context, text, duration);
+//    toast.show();
     return true;
     }
 
