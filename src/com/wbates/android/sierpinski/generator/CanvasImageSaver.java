@@ -7,7 +7,6 @@ import java.util.Date;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.location.Location;
 import android.net.Uri;
@@ -18,7 +17,6 @@ import android.widget.Toast;
 
 public class CanvasImageSaver {
   
-  private final String PREF_NAME = "Sierpinski";
   private SierpinskiCanvas canvas;
   private Context context;
   
@@ -31,12 +29,12 @@ public class CanvasImageSaver {
     Toast toast;
     int duration = Toast.LENGTH_SHORT;
     CharSequence text = "";
+    Date date = new Date();
+    long savetime = date.getTime();
 
     File folder = new File(Environment.getExternalStorageDirectory() + "/sierpinski");
-    SharedPreferences settings = context.getSharedPreferences(PREF_NAME, 0);
-    int filecounter = settings.getInt("FILE_COUNTER", 1);
     boolean success = false;
-    String imagefilename = "sier_" + filecounter;
+    String imagefilename = "sier_" + savetime;
     String imagefileextension = "png";
 
     if (!folder.exists()) {
@@ -54,16 +52,9 @@ public class CanvasImageSaver {
         e.printStackTrace();
       } 
       
-      Date date = new Date();
       text = "Image saved to " + imagefullpathfilename;
-      
-      filecounter++;
-      SharedPreferences.Editor editor = settings.edit();
-      editor.putInt("FILE_COUNTER", filecounter);
-      editor.commit();
-      
-      @SuppressWarnings("unused")
-      Uri u = saveMediaEntry(imagefullpathfilename,imagefilename,"",date.getTime(),0,null);
+            
+      saveMediaEntry(imagefullpathfilename,imagefilename,"",savetime,0,null);
     } else {
       text = "Unable to create folder: " + folder.getAbsolutePath(); 
     }  
