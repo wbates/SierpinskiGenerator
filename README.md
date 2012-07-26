@@ -43,3 +43,8 @@ Additional Licenses
         * http://developer.android.com/tools/extras/support-library.html
     * License
         * Apache License 2.0 (LICENSE-2.0.txt http://www.apache.org/licenses/LICENSE-2.0.txt)
+* Icon Clip Art - Produced on Android Asset Studio
+    * URL
+        * http://android-ui-utils.googlecode.com/hg/asset-studio/dist/icons-menu.html#source.space.trim=1&source.space.pad=0&name=example
+    * License
+        * Creative Commons - Attribution 3.0 Unported (CC BY 3.0) (http://creativecommons.org/licenses/by/3.0/)
