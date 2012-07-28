@@ -2,7 +2,9 @@ package com.wbates.android.sierpinski.generator;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -51,22 +53,38 @@ public class DrawActivity extends Activity {
   public boolean onOptionsItemSelected(MenuItem item)
   {
     Context context = getApplicationContext();
-//    CharSequence text = "";
-//    int duration = Toast.LENGTH_SHORT;
-//    Toast toast;
 
     switch(item.getItemId()) {
     case R.id.menu_save_image:  CanvasImageSaver imagesaver = new CanvasImageSaver(canvas, context);
-    imagesaver.saveToImage();
-    return true;
+      imagesaver.saveToImage();
+      return true;
     case R.id.menu_share_fb:  CanvasSocialShare socialshare = new CanvasSocialShare(canvas,context,this);
       socialshare.shareImage();
-//    toast = Toast.makeText(context, text, duration);
-//    toast.show();
-    return true;
+      return true;
+    case R.id.menu_about: openAboutDialog();
+      return true;
     }
 
     return false;
   }
+  
+  private void openAboutDialog() {
+    new AlertDialog.Builder(this)
+    .setTitle(R.string.menu_about)
+    .setMessage("Package:\n\t\t" + getString(R.string.app_name) + "\n" +
+        "Author:\n\t\t" + getString(R.string.author_name) + "\n" +
+        "Copyright:\n\t\t" + getString(R.string.copyright) + "\n" +
+        "License:\n\t\t" + getString(R.string.license_short) + "\n"
+    )
+    .setPositiveButton(R.string.close_button,
+    new DialogInterface.OnClickListener()
+    {
+    public void onClick(DialogInterface dialoginterface, int i)
+    {
+    }
+    })
+    .show();
+  }
+
 
 }
