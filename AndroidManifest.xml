@@ -24,7 +24,8 @@
         </activity>
         <activity
             android:name=".DrawActivity"
-            android:label="@string/title_activity_draw" >
+            android:label="@string/title_activity_draw"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wbates.android.sierpinski.generator.MainActivity" />
